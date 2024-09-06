@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    width: 99%;
+    height: 97%;
+    background-image: url(./Background2.png);
+    background-size: cover;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px ;
+    align-items: center;
+    padding: 0px 40px;   
+}
+
+.logo{
+    font-size: 30px;
+    color: orange;
+}
+
+.nav{
+    position: relative;
+    left: -180px;
+}
+a{
+    padding: 5px 15px;
+    font-size: 20px;
+    color: orange;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+    text-underline-position: under
+}
+
+.search{
+    font-size: 25px;
+
+}
+.search i{
+    padding: 5px 20px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 65px;
+}
+.right{
+    width: 440px;
+    height: 440px;
+    background-image: url(./food.jpg);
+    background-size: cover;
+    border-radius: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right::before{
+    width: 430px;
+    height: 430px;
+    border: 2px solid white;
+    content: "";
+    position: absolute;
+    border-radius:  430px;
+    padding: 10px;
+}
+.left p:nth-child(1){
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+}
+.left h1{
+    font-size: 90px;
+    color:  white;
+}
+.left p:nth-child(2){
+    color: orange;
+    font-size: 30px;
+    font-style: italic;
+}
+.left button{
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solide white;
+    background-color: transparent;
+    color: white;
+    margin: 20px 0px ;
+}
+
+.SocialMedia{
+    position: absolute;
+    right: 0; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width:  40px;
+    height: 200px;
+    background-color: white;
+    font-size: 25px;   
+}
+
+.SocialMedia i:hover{
+    color: blue;
+}
+#food1,#food2{
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 0px 20px;
+}
+
+.menu{
+    display: flex;
+    margin: 0px 100px;
+}
+#food1{
+    background-image: url(food1.png);
+}
+
+#food2{
+    background-image: url(food.jpg);
+}
+
+@media(max-width:768px){
+    .top{
+        padding: 0;
+    }
+
+    .logo{
+        font-size: 17px;
+        color: orange;
+    }
+    
+    .nav{
+        position: relative;
+        left: 0px;
+    }
+    a{
+        padding: 40px 15px;
+        margin: 5px;
+        font-size: 17px;
+    }
+    .search{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left h1{
+        font-size: 20px;
+        margin: 15px;
+    }
+}
